@@ -1,9 +1,9 @@
 ---
-title: cloudaccountsFE - 页面级别的前端组件
+title: yzh-mobile - 页面级别的前端组件
 order: 10
 sidebar: false
 hero:
-  title: cloudaccountsFE
+  title: yzh-mobile
   desc: ☁️ 云账户内部前端组件库,为提效而生.
   actions:
     - text: 快速开始 →
