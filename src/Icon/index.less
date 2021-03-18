@@ -1,0 +1,962 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'cloudaccount-icon';
+  font-style: normal;
+  font-display: auto;
+  src: url('./font/sty-icon.woff2') format('woff2'),
+    url('./font/sty-icon.woff') format('woff'),
+    url('./font/sty-icon.ttf') format('truetype');
+}
+
+@import '../style/base.less';
+
+@iconPrefixCls: ~'@{cloudaccount-prefix}-icon';
+
+.@{iconPrefixCls} {
+  position: relative;
+  display: inline-block;
+  font: normal normal normal 14px/1 cloudaccount-icon;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+
+  &::before {
+    display: inline-block;
+  }
+}
+
+.@{iconPrefixCls}-add-o::before {
+  content: '\F000';
+}
+
+.@{iconPrefixCls}-add-square::before {
+  content: '\F001';
+}
+
+.@{iconPrefixCls}-add::before {
+  content: '\F002';
+}
+
+.@{iconPrefixCls}-after-sale::before {
+  content: '\F003';
+}
+
+.@{iconPrefixCls}-aim::before {
+  content: '\F004';
+}
+
+.@{iconPrefixCls}-alipay::before {
+  content: '\F005';
+}
+
+.@{iconPrefixCls}-apps-o::before {
+  content: '\F006';
+}
+
+.@{iconPrefixCls}-arrow-down::before {
+  content: '\F007';
+}
+
+.@{iconPrefixCls}-arrow-left::before {
+  content: '\F008';
+}
+
+.@{iconPrefixCls}-arrow-up::before {
+  content: '\F009';
+}
+
+.@{iconPrefixCls}-arrow-right::before {
+  content: '\F00A';
+}
+
+.@{iconPrefixCls}-arrow::before {
+  content: '\F00A';
+}
+
+.@{iconPrefixCls}-ascending::before {
+  content: '\F00B';
+}
+
+.@{iconPrefixCls}-audio::before {
+  content: '\F00C';
+}
+
+.@{iconPrefixCls}-award-o::before {
+  content: '\F00D';
+}
+
+.@{iconPrefixCls}-award::before {
+  content: '\F00E';
+}
+
+.@{iconPrefixCls}-back-top::before {
+  content: '\F0E6';
+}
+
+.@{iconPrefixCls}-bag-o::before {
+  content: '\F00F';
+}
+
+.@{iconPrefixCls}-bag::before {
+  content: '\F010';
+}
+
+.@{iconPrefixCls}-balance-list-o::before {
+  content: '\F011';
+}
+
+.@{iconPrefixCls}-balance-list::before {
+  content: '\F012';
+}
+
+.@{iconPrefixCls}-balance-o::before {
+  content: '\F013';
+}
+
+.@{iconPrefixCls}-balance-pay::before {
+  content: '\F014';
+}
+
+.@{iconPrefixCls}-bar-chart-o::before {
+  content: '\F015';
+}
+
+.@{iconPrefixCls}-bars::before {
+  content: '\F016';
+}
+
+.@{iconPrefixCls}-bell::before {
+  content: '\F017';
+}
+
+.@{iconPrefixCls}-bill-o::before {
+  content: '\F018';
+}
+
+.@{iconPrefixCls}-bill::before {
+  content: '\F019';
+}
+
+.@{iconPrefixCls}-birthday-cake-o::before {
+  content: '\F01A';
+}
+
+.@{iconPrefixCls}-bookmark-o::before {
+  content: '\F01B';
+}
+
+.@{iconPrefixCls}-bookmark::before {
+  content: '\F01C';
+}
+
+.@{iconPrefixCls}-browsing-history-o::before {
+  content: '\F01D';
+}
+
+.@{iconPrefixCls}-browsing-history::before {
+  content: '\F01E';
+}
+
+.@{iconPrefixCls}-brush-o::before {
+  content: '\F01F';
+}
+
+.@{iconPrefixCls}-bulb-o::before {
+  content: '\F020';
+}
+
+.@{iconPrefixCls}-bullhorn-o::before {
+  content: '\F021';
+}
+
+.@{iconPrefixCls}-calendar-o::before {
+  content: '\F022';
+}
+
+.@{iconPrefixCls}-card::before {
+  content: '\F023';
+}
+
+.@{iconPrefixCls}-cart-circle-o::before {
+  content: '\F024';
+}
+
+.@{iconPrefixCls}-cart-circle::before {
+  content: '\F025';
+}
+
+.@{iconPrefixCls}-cart-o::before {
+  content: '\F026';
+}
+
+.@{iconPrefixCls}-cart::before {
+  content: '\F027';
+}
+
+.@{iconPrefixCls}-cash-back-record::before {
+  content: '\F028';
+}
+
+.@{iconPrefixCls}-cash-on-deliver::before {
+  content: '\F029';
+}
+
+.@{iconPrefixCls}-cashier-o::before {
+  content: '\F02A';
+}
+
+.@{iconPrefixCls}-certificate::before {
+  content: '\F02B';
+}
+
+.@{iconPrefixCls}-chart-trending-o::before {
+  content: '\F02C';
+}
+
+.@{iconPrefixCls}-chat-o::before {
+  content: '\F02D';
+}
+
+.@{iconPrefixCls}-chat::before {
+  content: '\F02E';
+}
+
+.@{iconPrefixCls}-checked::before {
+  content: '\F02F';
+}
+
+.@{iconPrefixCls}-circle::before {
+  content: '\F030';
+}
+
+.@{iconPrefixCls}-clear::before {
+  content: '\F031';
+}
+
+.@{iconPrefixCls}-clock-o::before {
+  content: '\F032';
+}
+
+.@{iconPrefixCls}-clock::before {
+  content: '\F033';
+}
+
+.@{iconPrefixCls}-close::before {
+  content: '\F034';
+}
+
+.@{iconPrefixCls}-closed-eye::before {
+  content: '\F035';
+}
+
+.@{iconPrefixCls}-cluster-o::before {
+  content: '\F036';
+}
+
+.@{iconPrefixCls}-cluster::before {
+  content: '\F037';
+}
+
+.@{iconPrefixCls}-column::before {
+  content: '\F038';
+}
+
+.@{iconPrefixCls}-comment-circle-o::before {
+  content: '\F039';
+}
+
+.@{iconPrefixCls}-comment-circle::before {
+  content: '\F03A';
+}
+
+.@{iconPrefixCls}-comment-o::before {
+  content: '\F03B';
+}
+
+.@{iconPrefixCls}-comment::before {
+  content: '\F03C';
+}
+
+.@{iconPrefixCls}-completed::before {
+  content: '\F03D';
+}
+
+.@{iconPrefixCls}-contact::before {
+  content: '\F03E';
+}
+
+.@{iconPrefixCls}-coupon-o::before {
+  content: '\F03F';
+}
+
+.@{iconPrefixCls}-coupon::before {
+  content: '\F040';
+}
+
+.@{iconPrefixCls}-credit-pay::before {
+  content: '\F041';
+}
+
+.@{iconPrefixCls}-cross::before {
+  content: '\F042';
+}
+
+.@{iconPrefixCls}-debit-pay::before {
+  content: '\F043';
+}
+
+.@{iconPrefixCls}-delete::before {
+  content: '\F044';
+}
+
+.@{iconPrefixCls}-descending::before {
+  content: '\F045';
+}
+
+.@{iconPrefixCls}-description::before {
+  content: '\F046';
+}
+
+.@{iconPrefixCls}-desktop-o::before {
+  content: '\F047';
+}
+
+.@{iconPrefixCls}-diamond-o::before {
+  content: '\F048';
+}
+
+.@{iconPrefixCls}-diamond::before {
+  content: '\F049';
+}
+
+.@{iconPrefixCls}-discount::before {
+  content: '\F04A';
+}
+
+.@{iconPrefixCls}-down::before {
+  content: '\F04B';
+}
+
+.@{iconPrefixCls}-ecard-pay::before {
+  content: '\F04C';
+}
+
+.@{iconPrefixCls}-edit::before {
+  content: '\F04D';
+}
+
+.@{iconPrefixCls}-ellipsis::before {
+  content: '\F04E';
+}
+
+.@{iconPrefixCls}-empty::before {
+  content: '\F04F';
+}
+
+.@{iconPrefixCls}-enlarge::before {
+  content: '\F0E4';
+}
+
+.@{iconPrefixCls}-envelop-o::before {
+  content: '\F050';
+}
+
+.@{iconPrefixCls}-exchange::before {
+  content: '\F051';
+}
+
+.@{iconPrefixCls}-expand-o::before {
+  content: '\F052';
+}
+
+.@{iconPrefixCls}-expand::before {
+  content: '\F053';
+}
+
+.@{iconPrefixCls}-eye-o::before {
+  content: '\F054';
+}
+
+.@{iconPrefixCls}-eye::before {
+  content: '\F055';
+}
+
+.@{iconPrefixCls}-fail::before {
+  content: '\F056';
+}
+
+.@{iconPrefixCls}-failure::before {
+  content: '\F057';
+}
+
+.@{iconPrefixCls}-filter-o::before {
+  content: '\F058';
+}
+
+.@{iconPrefixCls}-fire-o::before {
+  content: '\F059';
+}
+
+.@{iconPrefixCls}-fire::before {
+  content: '\F05A';
+}
+
+.@{iconPrefixCls}-flag-o::before {
+  content: '\F05B';
+}
+
+.@{iconPrefixCls}-flower-o::before {
+  content: '\F05C';
+}
+
+.@{iconPrefixCls}-free-postage::before {
+  content: '\F05D';
+}
+
+.@{iconPrefixCls}-friends-o::before {
+  content: '\F05E';
+}
+
+.@{iconPrefixCls}-friends::before {
+  content: '\F05F';
+}
+
+.@{iconPrefixCls}-gem-o::before {
+  content: '\F060';
+}
+
+.@{iconPrefixCls}-gem::before {
+  content: '\F061';
+}
+
+.@{iconPrefixCls}-gift-card-o::before {
+  content: '\F062';
+}
+
+.@{iconPrefixCls}-gift-card::before {
+  content: '\F063';
+}
+
+.@{iconPrefixCls}-gift-o::before {
+  content: '\F064';
+}
+
+.@{iconPrefixCls}-gift::before {
+  content: '\F065';
+}
+
+.@{iconPrefixCls}-gold-coin-o::before {
+  content: '\F066';
+}
+
+.@{iconPrefixCls}-gold-coin::before {
+  content: '\F067';
+}
+
+.@{iconPrefixCls}-good-job-o::before {
+  content: '\F068';
+}
+
+.@{iconPrefixCls}-good-job::before {
+  content: '\F069';
+}
+
+.@{iconPrefixCls}-goods-collect-o::before {
+  content: '\F06A';
+}
+
+.@{iconPrefixCls}-goods-collect::before {
+  content: '\F06B';
+}
+
+.@{iconPrefixCls}-graphic::before {
+  content: '\F06C';
+}
+
+.@{iconPrefixCls}-home-o::before {
+  content: '\F06D';
+}
+
+.@{iconPrefixCls}-hot-o::before {
+  content: '\F06E';
+}
+
+.@{iconPrefixCls}-hot-sale-o::before {
+  content: '\F06F';
+}
+
+.@{iconPrefixCls}-hot-sale::before {
+  content: '\F070';
+}
+
+.@{iconPrefixCls}-hot::before {
+  content: '\F071';
+}
+
+.@{iconPrefixCls}-hotel-o::before {
+  content: '\F072';
+}
+
+.@{iconPrefixCls}-idcard::before {
+  content: '\F073';
+}
+
+.@{iconPrefixCls}-info-o::before {
+  content: '\F074';
+}
+
+.@{iconPrefixCls}-info::before {
+  content: '\F075';
+}
+
+.@{iconPrefixCls}-invition::before {
+  content: '\F076';
+}
+
+.@{iconPrefixCls}-label-o::before {
+  content: '\F077';
+}
+
+.@{iconPrefixCls}-label::before {
+  content: '\F078';
+}
+
+.@{iconPrefixCls}-like-o::before {
+  content: '\F079';
+}
+
+.@{iconPrefixCls}-like::before {
+  content: '\F07A';
+}
+
+.@{iconPrefixCls}-live::before {
+  content: '\F07B';
+}
+
+.@{iconPrefixCls}-location-o::before {
+  content: '\F07C';
+}
+
+.@{iconPrefixCls}-location::before {
+  content: '\F07D';
+}
+
+.@{iconPrefixCls}-lock::before {
+  content: '\F07E';
+}
+
+.@{iconPrefixCls}-logistics::before {
+  content: '\F07F';
+}
+
+.@{iconPrefixCls}-manager-o::before {
+  content: '\F080';
+}
+
+.@{iconPrefixCls}-manager::before {
+  content: '\F081';
+}
+
+.@{iconPrefixCls}-map-marked::before {
+  content: '\F082';
+}
+
+.@{iconPrefixCls}-medal-o::before {
+  content: '\F083';
+}
+
+.@{iconPrefixCls}-medal::before {
+  content: '\F084';
+}
+
+.@{iconPrefixCls}-minus::before {
+  content: '\F0E8';
+}
+
+.@{iconPrefixCls}-more-o::before {
+  content: '\F085';
+}
+
+.@{iconPrefixCls}-more::before {
+  content: '\F086';
+}
+
+.@{iconPrefixCls}-music-o::before {
+  content: '\F087';
+}
+
+.@{iconPrefixCls}-music::before {
+  content: '\F088';
+}
+
+.@{iconPrefixCls}-new-arrival-o::before {
+  content: '\F089';
+}
+
+.@{iconPrefixCls}-new-arrival::before {
+  content: '\F08A';
+}
+
+.@{iconPrefixCls}-new-o::before {
+  content: '\F08B';
+}
+
+.@{iconPrefixCls}-new::before {
+  content: '\F08C';
+}
+
+.@{iconPrefixCls}-newspaper-o::before {
+  content: '\F08D';
+}
+
+.@{iconPrefixCls}-notes-o::before {
+  content: '\F08E';
+}
+
+.@{iconPrefixCls}-orders-o::before {
+  content: '\F08F';
+}
+
+.@{iconPrefixCls}-other-pay::before {
+  content: '\F090';
+}
+
+.@{iconPrefixCls}-paid::before {
+  content: '\F091';
+}
+
+.@{iconPrefixCls}-passed::before {
+  content: '\F092';
+}
+
+.@{iconPrefixCls}-pause-circle-o::before {
+  content: '\F093';
+}
+
+.@{iconPrefixCls}-pause-circle::before {
+  content: '\F094';
+}
+
+.@{iconPrefixCls}-pause::before {
+  content: '\F095';
+}
+
+.@{iconPrefixCls}-peer-pay::before {
+  content: '\F096';
+}
+
+.@{iconPrefixCls}-pending-payment::before {
+  content: '\F097';
+}
+
+.@{iconPrefixCls}-phone-circle-o::before {
+  content: '\F098';
+}
+
+.@{iconPrefixCls}-phone-circle::before {
+  content: '\F099';
+}
+
+.@{iconPrefixCls}-phone-o::before {
+  content: '\F09A';
+}
+
+.@{iconPrefixCls}-phone::before {
+  content: '\F09B';
+}
+
+.@{iconPrefixCls}-photo-fail::before {
+  content: '\F0E5';
+}
+
+.@{iconPrefixCls}-photo-o::before {
+  content: '\F09C';
+}
+
+.@{iconPrefixCls}-photo::before {
+  content: '\F09D';
+}
+
+.@{iconPrefixCls}-photograph::before {
+  content: '\F09E';
+}
+
+.@{iconPrefixCls}-play-circle-o::before {
+  content: '\F09F';
+}
+
+.@{iconPrefixCls}-play-circle::before {
+  content: '\F0A0';
+}
+
+.@{iconPrefixCls}-play::before {
+  content: '\F0A1';
+}
+
+.@{iconPrefixCls}-plus::before {
+  content: '\F0A2';
+}
+
+.@{iconPrefixCls}-point-gift-o::before {
+  content: '\F0A3';
+}
+
+.@{iconPrefixCls}-point-gift::before {
+  content: '\F0A4';
+}
+
+.@{iconPrefixCls}-points::before {
+  content: '\F0A5';
+}
+
+.@{iconPrefixCls}-printer::before {
+  content: '\F0A6';
+}
+
+.@{iconPrefixCls}-qr-invalid::before {
+  content: '\F0A7';
+}
+
+.@{iconPrefixCls}-qr::before {
+  content: '\F0A8';
+}
+
+.@{iconPrefixCls}-question-o::before {
+  content: '\F0A9';
+}
+
+.@{iconPrefixCls}-question::before {
+  content: '\F0AA';
+}
+
+.@{iconPrefixCls}-records::before {
+  content: '\F0AB';
+}
+
+.@{iconPrefixCls}-refund-o::before {
+  content: '\F0AC';
+}
+
+.@{iconPrefixCls}-replay::before {
+  content: '\F0AD';
+}
+
+.@{iconPrefixCls}-scan::before {
+  content: '\F0AE';
+}
+
+.@{iconPrefixCls}-search::before {
+  content: '\F0AF';
+}
+
+.@{iconPrefixCls}-send-gift-o::before {
+  content: '\F0B0';
+}
+
+.@{iconPrefixCls}-send-gift::before {
+  content: '\F0B1';
+}
+
+.@{iconPrefixCls}-service-o::before {
+  content: '\F0B2';
+}
+
+.@{iconPrefixCls}-service::before {
+  content: '\F0B3';
+}
+
+.@{iconPrefixCls}-setting-o::before {
+  content: '\F0B4';
+}
+
+.@{iconPrefixCls}-setting::before {
+  content: '\F0B5';
+}
+
+.@{iconPrefixCls}-share-o::before {
+  content: '\F0E7';
+}
+
+.@{iconPrefixCls}-share::before {
+  content: '\F0B6';
+}
+
+.@{iconPrefixCls}-shop-collect-o::before {
+  content: '\F0B7';
+}
+
+.@{iconPrefixCls}-shop-collect::before {
+  content: '\F0B8';
+}
+
+.@{iconPrefixCls}-shop-o::before {
+  content: '\F0B9';
+}
+
+.@{iconPrefixCls}-shop::before {
+  content: '\F0BA';
+}
+
+.@{iconPrefixCls}-shopping-cart-o::before {
+  content: '\F0BB';
+}
+
+.@{iconPrefixCls}-shopping-cart::before {
+  content: '\F0BC';
+}
+
+.@{iconPrefixCls}-shrink::before {
+  content: '\F0BD';
+}
+
+.@{iconPrefixCls}-sign::before {
+  content: '\F0BE';
+}
+
+.@{iconPrefixCls}-smile-comment-o::before {
+  content: '\F0BF';
+}
+
+.@{iconPrefixCls}-smile-comment::before {
+  content: '\F0C0';
+}
+
+.@{iconPrefixCls}-smile-o::before {
+  content: '\F0C1';
+}
+
+.@{iconPrefixCls}-smile::before {
+  content: '\F0C2';
+}
+
+.@{iconPrefixCls}-star-o::before {
+  content: '\F0C3';
+}
+
+.@{iconPrefixCls}-star::before {
+  content: '\F0C4';
+}
+
+.@{iconPrefixCls}-stop-circle-o::before {
+  content: '\F0C5';
+}
+
+.@{iconPrefixCls}-stop-circle::before {
+  content: '\F0C6';
+}
+
+.@{iconPrefixCls}-stop::before {
+  content: '\F0C7';
+}
+
+.@{iconPrefixCls}-success::before {
+  content: '\F0C8';
+}
+
+.@{iconPrefixCls}-thumb-circle-o::before {
+  content: '\F0C9';
+}
+
+.@{iconPrefixCls}-thumb-circle::before {
+  content: '\F0CA';
+}
+
+.@{iconPrefixCls}-todo-list-o::before {
+  content: '\F0CB';
+}
+
+.@{iconPrefixCls}-todo-list::before {
+  content: '\F0CC';
+}
+
+.@{iconPrefixCls}-tosend::before {
+  content: '\F0CD';
+}
+
+.@{iconPrefixCls}-tv-o::before {
+  content: '\F0CE';
+}
+
+.@{iconPrefixCls}-umbrella-circle::before {
+  content: '\F0CF';
+}
+
+.@{iconPrefixCls}-underway-o::before {
+  content: '\F0D0';
+}
+
+.@{iconPrefixCls}-underway::before {
+  content: '\F0D1';
+}
+
+.@{iconPrefixCls}-upgrade::before {
+  content: '\F0D2';
+}
+
+.@{iconPrefixCls}-user-circle-o::before {
+  content: '\F0D3';
+}
+
+.@{iconPrefixCls}-user-o::before {
+  content: '\F0D4';
+}
+
+.@{iconPrefixCls}-video-o::before {
+  content: '\F0D5';
+}
+
+.@{iconPrefixCls}-video::before {
+  content: '\F0D6';
+}
+
+.@{iconPrefixCls}-vip-card-o::before {
+  content: '\F0D7';
+}
+
+.@{iconPrefixCls}-vip-card::before {
+  content: '\F0D8';
+}
+
+.@{iconPrefixCls}-volume-o::before {
+  content: '\F0D9';
+}
+
+.@{iconPrefixCls}-volume::before {
+  content: '\F0DA';
+}
+
+.@{iconPrefixCls}-wap-home-o::before {
+  content: '\F0DB';
+}
+
+.@{iconPrefixCls}-wap-home::before {
+  content: '\F0DC';
+}
+
+.@{iconPrefixCls}-wap-nav::before {
+  content: '\F0DD';
+}
+
+.@{iconPrefixCls}-warn-o::before {
+  content: '\F0DE';
+}
+
+.@{iconPrefixCls}-warning-o::before {
+  content: '\F0DF';
+}
+
+.@{iconPrefixCls}-warning::before {
+  content: '\F0E0';
+}
+
+.@{iconPrefixCls}-weapp-nav::before {
+  content: '\F0E1';
+}
+
+.@{iconPrefixCls}-wechat::before {
+  content: '\F0E2';
+}
+
+.@{iconPrefixCls}-youzan-shield::before {
+  content: '\F0E3';
+}
