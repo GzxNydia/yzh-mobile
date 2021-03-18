@@ -14,8 +14,8 @@ features:
     title: 简单易用
     desc: 基于ts+hooks实现的移动端组件库
   - icon: https://gw.alipayobjects.com/os/q/cms/images/k9ziik0f/487a2685-8f68-4c34-824f-e34c171d0dfd_w96_h96.png
-    title: Ant Design
-    desc: 与 Ant Design 设计体系一脉相承，无缝对接 antd 项目
+    title: YZH
+    desc: 与内部设计风格一致 无缝对接
   - icon: https://gw.alipayobjects.com/os/q/cms/images/k9zij2bh/67f75d56-0d62-47d6-a8a5-dbd0cb79a401_w96_h96.png
     title: TypeScript
     desc: 使用 TypeScript 开发，提供完整的类型定义文件
