@@ -11,7 +11,7 @@ export interface CellProps {
   arrow?: 'left' | 'up' | 'right' | 'down' | 'none'; // 箭头方向
   center?: boolean; // 内容是否居中
   ripple?: boolean; // 是否开启水波纹效果
-  onClick: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+  onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   children?: React.ReactNode;
   wrapClassName?: string;
   style?: React.CSSProperties;

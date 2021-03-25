@@ -1,0 +1,62 @@
+@import '../../style/base.less';
+
+@imgPrefixCls: ~'@{yzx-mobile-prefix}-video';
+
+.@{imgPrefixCls} {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(34, 34, 34);
+  border-radius: 4px;
+  font-size: 12px;
+
+  video {
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 225px;
+  }
+
+  .play {
+    position: absolute;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+
+  .current {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 16px;
+    cursor: pointer;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+    border-radius: 0 0 4px 4px;
+
+    p {
+      &:first-child {
+        width: 34px;
+        text-align: right;
+      }
+
+      &:nth-child(2) {
+        margin-right: 1px;
+        margin-left: 2px;
+      }
+
+      font-weight: 400;
+      line-height: 17px;
+      color: rgba(255, 255, 255, 1);
+      user-select: none;
+    }
+  }
+}

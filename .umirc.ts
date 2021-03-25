@@ -16,7 +16,7 @@ export default defineConfig({
     null,
     {
       title: 'GitHub',
-      path: 'https://github.com/ant-design/pro-components',
+      path: 'https://github.com/GzxNydia/yzh-mobile',
     },
   ],
   // plugins: [join(__dirname, './plugins/umi-plugin.ts')],

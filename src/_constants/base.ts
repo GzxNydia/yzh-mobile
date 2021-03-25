@@ -1,1 +1,1 @@
-export const PREFIX_CLS = 'cloudaccount';
+export const PREFIX_CLS = 'yzx-mobile';

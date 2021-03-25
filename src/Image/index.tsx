@@ -98,7 +98,6 @@ const Image: React.FC<ImageProps> = props => {
   const onLoad = (
     event: React.SyntheticEvent<HTMLImageElement, Event> | Event,
   ) => {
-    console.log('111111');
     setLoading(false);
     onPropsLoad && onPropsLoad(event);
   };

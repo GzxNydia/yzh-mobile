@@ -13,17 +13,17 @@ nav:
 
 ```
 // yarn
-yarn add cloudaccount
+yarn add yzx-mobile
 
 // npm
-npm install cloudaccount
+npm install yzx-mobile
 ```
 
 ## 使用
 
 ```
 import React from 'react';
-import { Button } from 'cloudaccount';
+import { Button } from 'yzx-mobile';
 
 class Example extends React.Component {
   render() {
