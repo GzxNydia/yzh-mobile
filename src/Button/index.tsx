@@ -16,16 +16,16 @@ export type TButtonHtmlType = typeof buttonHtmlTypes[number];
 export interface IBaseButtonProps {
   className?: string;
   prefixCls?: string;
-  /* 设置 Button 的禁用 */
+  /** 设置 Button 的禁用 */
   disabled?: boolean;
-  /* 设置 Button 的尺寸 */
+  /** 设置 Button 的尺寸 */
   size?: TButtonSize;
-  /* 设置 Button 的类型 */
+  /** 设置 Button 的类型 */
   btnType?: TButtonType;
-  /* 设置 Button 原生 type 值 */
+  /** 设置 Button 原生 type 值 */
   htmlType?: TButtonHtmlType;
   children: React.ReactNode;
-  /* 设置 Button 为 link 类型时的跳转链接 */
+  /** 设置 Button 为 link 类型时的跳转链接 */
   href?: string;
 }
 

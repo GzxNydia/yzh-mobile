@@ -1,0 +1,53 @@
+@import '../../style/base.less';
+
+@imgPrefixCls: ~'@{yzx-mobile-prefix}-noticeBar';
+
+.@{imgPrefixCls} {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 10px 4px;
+
+  .icon {
+    .img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .noticeWrap {
+    flex: 1;
+    margin-left: 10px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .noticeContent {
+    width: fit-content;
+    white-space: nowrap;
+
+    .name {
+      color: #f3235c;
+    }
+
+    .desc {
+      margin-right: 15px;
+      color: #ff511b;
+    }
+  }
+
+  .notice-bar__play {
+    animation: notice-bar-play-infinite linear both;
+  }
+
+  .notice-bar__play--infinite {
+    animation: notice-bar-play-infinite linear infinite both;
+  }
+
+  @keyframes notice-bar-play-infinite {
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+}
