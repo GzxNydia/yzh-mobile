@@ -12,6 +12,12 @@ export default defineConfig({
   publicPath: '/yzh-mobile/',
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   styles: ['.markdown > h4 { color: #1890ff !important}'],
+  themeConfig: {
+    hd: {
+      // 禁用高清方案
+      rules: [],
+    },
+  },
   navs: [
     null,
     {

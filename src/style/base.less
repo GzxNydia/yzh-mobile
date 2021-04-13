@@ -1,5 +1,11 @@
 @import './color.less';
 
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+}
+
 @yzx-mobile-prefix: yzx-mobile;
 
 @font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -10,9 +16,10 @@
 @font-family-base: @font-family-sans-serif;
 
 // 字体大小
-@font-size-base: 0.5rem; // Assumes the browser default, typically `16px`
+@font-size-base: 1rem; // Assumes the browser default, typically `16px`
 @font-size-lg: @font-size-base * 1.25;
 @font-size-sm: @font-size-base * 0.875;
+@font-size-xs: @font-size-base * 0.75;
 @font-size-root: null;
 
 // 字重
@@ -79,6 +86,10 @@
 @btn-padding-y-lg: 0.5rem;
 @btn-padding-x-lg: 1rem;
 @btn-font-size-lg: @font-size-lg;
+
+@btn-padding-y-xs: 0.125rem;
+@btn-padding-x-xs: 0.25rem;
+@btn-font-size-xs: @font-size-xs;
 
 // 按钮边框
 @btn-border-width: @border-width;

@@ -4,8 +4,8 @@ nav:
   title: 组件
   path: /components
 group:
-  title: 通用
-  path: /common
+  title: 媒体组件
+  path: /media
 ---
 
 ## VideoPlayer

@@ -7,3 +7,4 @@ export { default as AudioPlayer } from './AudioPlayer';
 export { default as VideoPlayer } from './VideoPlayer';
 export { default as Image } from './Image';
 export { default as NoticeBar } from './NoticeBar';
+export { default as VideoControl } from './Video';

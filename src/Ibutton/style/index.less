@@ -1,0 +1,48 @@
+@import '../../style/base.less';
+@import './mixin.less';
+
+@btn-prefix-cls: ~'@{yzx-mobile-prefix}-btn';
+
+.@{btn-prefix-cls} {
+  .btn();
+
+  &-xs {
+    .btn-xs();
+  }
+
+  &-sm {
+    .btn-sm();
+  }
+
+  &-lg {
+    .btn-lg();
+  }
+
+  &-xl {
+    .btn-xl();
+  }
+
+  &-primary {
+    .btn-primary();
+  }
+
+  &-danger {
+    .btn-danger();
+  }
+
+  &-default {
+    .btn-default();
+  }
+
+  &-link {
+    .btn-link();
+  }
+
+  &-success {
+    .btn-success();
+  }
+
+  &-warning {
+    .btn-warning();
+  }
+}

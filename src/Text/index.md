@@ -4,7 +4,7 @@ nav:
   title: 组件
   path: /components
 group:
-  title: 通用
+  title: 通用组件
   path: /common
 ---
 
